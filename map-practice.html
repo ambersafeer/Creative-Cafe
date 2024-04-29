@@ -3,19 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <title>Map Practice</title>
-<link rel="stylesheet" href="leaflet.css">
-<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="SVG/logo.svg">
+	<script src="https://kit.fontawesome.com/37fcc6882c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/xus6hgl.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+	 <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 </head>
 
 <body>
+	<div class="wrapper">
+	<h1> Practice Map </h1>
 	<section class="map-display">
 		<div id="map-div"></div>
 	</section>
 
+	</div>
 	
 	
-	
-	<div class="map2">
+<!--	<div class="map2">
 		<div class="map-area"></div>
 		
 		<a href="#london-profile"><img class="map2-item" id="map-item-shoe" src="SVG/Asset 2.svg"></a>
@@ -26,14 +40,14 @@
 	
 	<h3 id="london-profile">London Trash</h3>
 
-<!-- add content for profile -->
+
 
 <h3 id="newyork-profile">New York Trash</h3>
 
-<!-- add content for profile -->
 
+-->
 	
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/leaflet.js"></script>
 <script src="js/map-practice.js"></script>
 </body>

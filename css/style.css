@@ -324,10 +324,25 @@ REVIEW START
 	grid-row: 1/3;
 	font-size: 18px;
 }
-.reviews{
+.main{
 	grid-column: 1/3;
-	grid-row:2;
+	grid-row:2/3;
 }
+
+.fa-ul p{
+/*	margin-left: -1.0em;*/
+	margin-top: 0;
+}
+
+/*
+.review-micro ul {
+	margin-left: 2.25em;
+}
+
+.review-micro span {
+	color: hotpink;
+}
+*/
 
 /* 
 *************
@@ -339,6 +354,68 @@ REVIEW END
 *************
 */
 
+.blog-container {
+	display:grid;
+	grid-gap: 20px;
+	grid-template-columns: 20% 50% 30%;
+	padding: 10px;
+	border-bottom: solid thin #363636;
+}
+
+.blog-info{
+	line-height: 1.0;
+}
+
+.blog-info h2{
+	font-size: 1.5rem;
+	color: #1B1110;
+}
+
+.blog-info h4{
+	font-size: 1.125rem;
+	font-weight: 100;
+	color: #1B1110;
+}
+
+.blog-info p{
+	font-family: "carrotflower", sans-serif;
+	font-size: 1rem;
+	color: #1B1110;
+}
+
+.blog-date p{
+	font-size: 1rem;
+	font-family: "carrotflower", sans-serif;
+}
+
+.blog-info a{
+	text-decoration: none;
+}
+
+.blog-info a:hover{
+	text-decoration: none;
+	
+}
+
+.blog-info h2:hover{
+	text-decoration: underline;
+}
+
+
+/*
+.blog-date{
+	grid-column:1;
+}
+.review-micro{
+	grid-column:3;
+	grid-row: 1/3;
+	font-size: 18px;
+}
+.main{
+	grid-column: 1/3;
+	grid-row:2/3;
+*/
+}
 
 .profile-container img{
 	border-radius: 100%;
@@ -609,6 +686,14 @@ border: solid #bababa 1px;
 	left:400px;
 	opacity: 0.5;
 	border: solid #bababa 1px;
+}
+
+.back-button{
+	text-decoration: none;
+}
+
+.top{
+	padding-top: 15px;
 }
 
 
