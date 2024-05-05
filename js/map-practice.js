@@ -6,7 +6,8 @@ var nbMap = L.map('map-div').setView([40.5, -74.45], 14);
 var CartoDB_VoyagerLabelsUnder = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	maxZoom: 20
+	maxZoom: 18,
+	minZoom: 13
 }).addTo(nbMap);
 
 
