@@ -5,7 +5,7 @@ body{
 	background-color:#FFDFDA;
 	color:#1B1110;
 
-	font-family: "roca", serif;
+	font-family: "agenda", sans-serif;
 	font-weight: 100;
 	/*at least four fonts, fave font, windows font, mac font, general family font */
 	font-size: 1.25rem; /* 16px = 1 rem */ /* 22px = 1 em */
@@ -19,12 +19,13 @@ body{
 }
 
 h1{
-	font-family: "carrotflower", sans-serif;
+/*	font-family: "carrotflower", sans-serif;*/
+	font-family: "roca", serif;
 	font-weight: 400;
 }
 
 h2{
-	font-family: "roca", serif;
+	font-family: "agenda", sans-serif;
 	font-weight: 400;
 }
 
@@ -35,6 +36,59 @@ a {
 a:hover{
 	color: #1B1110;
 }
+
+/* 
+*************
+*************
+*************
+SITE NAVIGATION START
+*************
+*************
+*************
+*/
+.site-nav-flex{
+	position: relative;
+	font-family: "roca", serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	column-gap: 32px;
+	font-weight: bold;
+	font-size: 20px;
+/*	background:#E2E9F4;*/
+	background: white;
+	padding-top: 10px;
+	box-shadow: 0px 2px 15px 3px #4D5061;
+/*	top:0px;*/
+	width: 100%;
+/*	z-index: 2000;*/
+	
+
+}
+
+.site-nav-flex a{
+/*	color:#4D5061;*/
+	color: #614E4D;
+	text-decoration: none;
+
+}
+
+.site-nav-flex a:hover{
+	color: #1B1110;
+	border: 0px;
+	text-decoration: underline;
+}
+
+/* 
+*************
+*************
+*************
+SITE NAVIGATION END
+*************
+*************
+*************
+*/
 
 /* 
 *************
@@ -53,11 +107,12 @@ WRAPPER START
 	width: 950px;
 	margin-left:auto;
 	margin-right: auto;
-	margin-top: 15px;
+/*	margin-top: 15px;*/
 	padding-right:40px;
 	padding-left: 40px;
 	padding-bottom: 30px;
-	padding-top: 60px;
+	padding-top: 10px;
+	
 }
 
 /* 
@@ -116,7 +171,7 @@ LEAD SECTION START
 }
 
 .primary-statement{
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	width: auto;
 /*	background:#E2E9F4;*/
 	background: white;
@@ -127,7 +182,7 @@ LEAD SECTION START
 }
 
 .secondary-statement{
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	position: absolute;
 	top: 150px;
 	left: 50%;
@@ -148,58 +203,6 @@ LEAD SECTION START
 *************
 *************
 LEAD SECTION END
-*************
-*************
-*************
-*/
-
-/* 
-*************
-*************
-*************
-SITE NAVIGATION START
-*************
-*************
-*************
-*/
-.site-nav-flex{
-	font-family: "carrotflower", sans-serif;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	column-gap: 32px;
-	font-weight: bold;
-	font-size: 20px;
-	position: fixed;
-/*	background:#E2E9F4;*/
-	background: white;
-	padding-top: 10px;
-	box-shadow: 0px 2px 15px 3px #4D5061;
-	top:0px;
-	width: 100%;
-	z-index: 1;
-
-}
-
-.site-nav-flex a{
-/*	color:#4D5061;*/
-	color: #614E4D;
-	text-decoration: none;
-
-}
-
-.site-nav-flex a:hover{
-	color: #1B1110;
-	border: 0px;
-	text-decoration: underline;
-}
-
-/* 
-*************
-*************
-*************
-SITE NAVIGATION END
 *************
 *************
 *************
@@ -378,14 +381,14 @@ REVIEW END
 }
 
 .blog-info p{
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	font-size: 1rem;
 	color: #1B1110;
 }
 
 .blog-date p{
 	font-size: 1rem;
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 }
 
 .blog-info a{
@@ -451,7 +454,7 @@ REVIEW END
 
 .showcase-item h3{
 	text-align: center;
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	font-weight: 100;
 	font-size: 2rem;
 }
@@ -472,43 +475,41 @@ REVIEW END
 .showcase-item a:hover{
 	color: #1B1110;
 }
-.gallery-container{
-/*
-	display:grid;
-	grid-template-columns: auto auto auto;
-	gap: 2rem 4rem;
-	align-items:center;
-*/
-	background-color: #614E4D;
-	overflow: auto;
-	white-space: nowrap;
-	padding:10px;
+
+.media-container{
+	display: grid;
+	gap: 15px;
+	grid-auto-flow: column;
+	grid-auto-columns: 45%;
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+	
+	
 }
 
-.gallery-container img:hover{
-	filter: grayscale(100%);
+.media-element{
+	padding: 10px;
+	background: #7A4C4C;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
 }
 
-/*
-.gallery-caption{
-	position:absolute;
-	 top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.media-element img{
+	inline-size: 100%;
 }
-*/
 
 
 
 .page-title{
 	background:#7A4C4C;
+/*	background-size: auto;*/
 	color: white;
 	padding: 20px;
 	border-radius: 100px;
-	display: inline-block;
-	width: auto;
-	align-items: center;
+/*	display: inline-block;*/
+/*	width: auto;*/
+	text-align: center;
 }
 
 
@@ -565,7 +566,7 @@ hr{
 }
 
 .name{
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	font-size: 1.5rem;
 	font-weight: 700;
 }
@@ -575,13 +576,13 @@ hr{
 }
 
 .review-title{
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	font-size: 2rem;
 	font-weight: 700;
 }
 
 .tagline{
-	font-family: "roca", serif;
+	font-family: "agenda", sans-serif;
 	font-weight: 100;
 	font-size: 1.25rem;
 }
@@ -647,10 +648,55 @@ hr{
 
 #map-div {
 width: 900px;
-height: 600px;
+height: 500px;
 border: solid #bababa 1px;
 }
 
+#map-legend{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	box-shadow: 0 0 0 2px rgb(0 0 0 / 20%);
+	background: #FFFFFF;
+	width: 120px;
+	height: 100px;
+}
+
+#map-legend p{
+	font-family: "roca", serif;
+	font-size: 1rem;
+	font-weight: 100;
+}
+#map-legend p, i{
+	display: inline;
+	line-height: 2.0;
+}
+#map-legend i{
+	font-size:20px;
+	color: #7A4C4C;
+/*	display: inline;*/
+}
+
+#map-legend h4{
+	font-family: "roca", serif;
+	color: #7A4C4C;
+	font-size: 1.5rem;
+/*	line-height: 0.1;*/
+	text-align: center;
+	margin: 0.2px 0px 0px 0px;
+}
+
+#map-legend hr{
+	height: 1px;
+	margin:0.2px 0px 0.7px 0px;
+}
+
+/*
 .map2{
 	width:900px;
 	height: 600px;
@@ -658,8 +704,8 @@ border: solid #bababa 1px;
 	background: url("images/warm-cafe.jpg") no-repeat;
 	background-size: 900px 600px;
 	padding: 0;
-	margin: 0; /* adjust as needed */
-	position: relative; /* needed for positioning the icons */
+	margin: 0;
+	position: relative;
 }
 
 .map2-item {
@@ -687,6 +733,7 @@ border: solid #bababa 1px;
 	opacity: 0.5;
 	border: solid #bababa 1px;
 }
+*/
 
 .back-button{
 	text-decoration: none;
@@ -697,10 +744,24 @@ border: solid #bababa 1px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
 	
 /*	background: #E2E9F4;*/
-	font-family: "carrotflower", sans-serif;
+	font-family: "roca", serif;
 	background: #FFDFDA;
 	text-align: center;
 	width: 100%;

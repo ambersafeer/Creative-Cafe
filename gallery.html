@@ -8,6 +8,14 @@
 	<link rel="icon" type="image/x-icon" href="SVG/logo.svg">
 	<link rel="stylesheet" href="https://use.typekit.net/xus6hgl.css">
 	<script src="https://kit.fontawesome.com/37fcc6882c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/leaflet.css">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+	 <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 </head>
 
 <body>
@@ -26,40 +34,58 @@
       </header>
 	<div class="wrapper">
 		<h1 class="page-title"> The Search for Art in New Brunswick <i class="fa-solid fa-magnifying-glass"></i> </h1>
-		<h2> The world is teeming with art at every waking moment, but the question is: are you looking hard enough to find it?</h2>
-	
+		<h3> The world is teeming with art at every waking moment, but the question is: are you looking hard enough to find it?</h3>
+
+		
 		<p> Evidently, there is art all around us, from the booming architecture found in industrial cities to Mother Nature's own delicate creations. At Creative Café, we want to emphasize art's universal disposition by sharing our favorite pieces in our city. Not only do we hope to shed light and acknowledgement to these often-forgotten pieces, but we also intend to help <em>you</em> open up your artist eye to what's possible.</p>
 		
 		<p>Join us as we discover art (the good, the bad, and the unconventional) all throughout New Brunswick, NJ! These photos were taken over the course of just one week in the city; from my daily commutes to class, to grabbing food at the cafes, to just simply enjoying the weather, the art was beautiful <em>and</em> bountiful. If you're feeling awfully inspired by our gallery, be sure to share your own with the hashtag #Search4Art and tag us on Instagram @creative.café.nb!</p>
 		
-		
-		<h3>Social Justice</h3>
-		
-		<div class="gallery-container">
+		<h3> Click on an icon to reveal its identity, and hit the link to read more about it!</h3>
+	<section class="map-display">
+		<div id="map-div">
+		<div id="map-legend">
+		<h4>Legend</h4>
+			<hr>
+			<div>
+			<i class="fa-solid fa-paintbrush"></i> <p>Artworks</p>
+			</div>
 			
-				<img src="images/gallery-resized/social/dreams.jpg">
-<!--				<h4>Dreams of our Children</h4>-->
-				
-<!--					<div class="gallery-caption">Dreams of our Children</div>-->
-				
-		
-
-				<img src="images/gallery-resized/social/social-2.jpg">
-<!--				<h4>School of Social Work</h4>-->
-	
-			
-		
-				<img src="images/gallery-resized/social/convergence.jpg">
-<!--				<h4>Convergence Point</h4>-->
-				<img src="images/gallery-resized/social/convergence-5.jpg">
-				<img src="images/gallery-resized/social/convergence-4.jpg">
-				<img src="images/gallery-resized/social/convergence-3.jpg">
-				<img src="images/gallery-resized/social/convergence-2.jpg">
-				<img src="images/gallery-resized/social/convergence-1.jpg">
-			
+			<div>
+			<i class="fa-solid fa-building-columns"></i> <p>Art Galleries</p>
+			</div>
+		</div>
 		</div>
 		
-		<p>This section is dedicated to art with a deeper purpose in addition to its beauty. Coincidentally (or not), these are all murals, perhaps because the message is easier to spread when displayed to a wider audience. The first, referred to both as "The Dreams of Our Children" and "Una Gota Rompe La Piedra" (A Drop Breaks the Stone) is a mural located on the building at the intersection of Jersey Avenue and French Street in New Brunswick, NJ. In celebration of Oxacan Mexican culture, a population that is very prominent in New Brunswick, the mural features a vibrant depicition of a Latino family, complete with vivid colors and a hopeful message for the future of the community's children.</p>
+	</section>
+		
+		<h3 id="social-justice">Cultural Murals</h3>
+		
+		<div class="media-container">
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/social/dreams.jpg">
+			<p>Dreams of our Children</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/social/social-2.jpg">
+			<p>School of Social Work Mural</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/social/convergence.jpg">
+			<p>Convergence Point</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/common/one-piece.jpg">
+			<p>One Piece mural at Edo Takeout</p>
+			</div>
+
+		</div>
+		
+		<p>This section is dedicated to murals with a deeper purpose in addition to its beauty. With such wide-scale presentation and accesibility, the cultural significance of these pieces are much easier to spread to an audience. The first, referred to both as "The Dreams of Our Children" and "Una Gota Rompe La Piedra" (A Drop Breaks the Stone), is a mural located on the building at the intersection of Jersey Avenue and French Street in New Brunswick, NJ. In celebration of Oxacan Mexican culture, a population that is very prominent in New Brunswick, the mural features a vibrant depicition of a Latino family, complete with vivid colors and a hopeful message for the future of the community's children.</p>
 		
 		<p>
 		Next up is the mural representing the School of Social work, a piece spelling out "Toward a More Just Future" in both English and American Sign Language. The panels found all across the building send a message of love and acceptance through its image referencing empowerment for the LGBTQ+ community, women, the Black Lives Matter movement, and much more.</p>
@@ -67,21 +93,27 @@
 		<p>Finally, we have "Convergence Point," a mural created by Rutgers Mason Gross School of the Arts alum Ingrid Morales. This piece, located in Deiner Park (behind the river dorms) is a 100-foot wide mural depicting the university history and American history, meeting in the center to where they overlap. The art piece is meant to demonstrate how Rutgers University encourages and supports its students to become global leaders of the future.</p>
 		
 		
-		<h3>More than Meets the Eye</h3>
+		<h3>Harmonious Histories</h3>
 		
-		<div class="gallery-container">
+		
+		<div class="media-container">
 			
-			
-				<img src="images/gallery-resized/common/world.jpg">
-<!--				<h4>A World Turned Inside Out</h4>-->
-			
-			
-				<img src="images/gallery-resized/common/glass.jpg">
-<!--				<h4>Class of 1957 Stained Glass Window</h4>-->
-			
-				<img src="images/gallery-resized/common/segal.jpg">
-<!--				<h4>Walking Man by George Segal</h4>-->
+			<div class="media-element">
+			<img src="images/gallery-resized/common/world.jpg">
+			<p>A World Turned Inside Out</p>
 			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/common/glass.jpg">
+			<p>Class of 1957 and 1978 Stained Glass Window</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/common/segal.jpg">
+			<p><em>Walking Man</em> by George Segal</p>
+			</div>
+			
+		</div>
 		
 		<p>As we scuttle across campus with our heads held down, we tend to miss the art that is <em> right</em> in front of us. Perhaps it's the statue we ignore because we see it on a day to day or maybe some window panels we overlook because we refuse to look up for once. And yet, despite how often we neglect them, they hold such history and deep meaning.</p>
 		
@@ -97,20 +129,29 @@
 		
 		<h3>From Simon's POV</h3>
 		
-		<div class="gallery-container">
+		<div class="media-container">
 			
-			
-				<img src="images/gallery-resized/simon/body.jpg">
-<!--				<h4>A World Turned Inside Out</h4>-->
-			
-			
-				<img src="images/gallery-resized/simon/washington.jpg">
-<!--				<h4>Class of 1957 Stained Glass Window</h4>-->
-			
-				<img src="images/gallery-resized/simon/woman.jpg">
-<!--				<h4>Walking Man by George Segal</h4>-->
-				<img src="images/gallery-resized/simon/final.jpg">
+			<div class="media-element">
+			<img src="images/gallery-resized/simon/body.jpg">
+			<p>Male Torso, Eros</p>
 			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/simon/washington.jpg">
+			<p>George Washington by Jane Stuart</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/simon/woman.jpg">
+			<p>Self Portrait by Helen Lundeberg</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/simon/final.jpg">
+			<p>Composition No. 2 by Fanny Sanin</p>
+			</div>
+		</div>
+		
 		
 		<p>If you've headed on over to our <a href="about.html">About Page</a> (which you should totally check out, by the way), then you will be familiar with our resident sloth, Simon! Last Wednesday, Simon decided to take a trip out to the Zimmerli Art Museum to discover the unique pieces on display (as well as model with some of them). If you have not checked out this museum and attend Rutgers, he highly recommends you do!</p>
 		
@@ -124,22 +165,36 @@
 		
 		
 		
-		<h3>Smaller-Scale Student Art</h3>
+		<h3>Student Art</h3>
 		
-		<div class="gallery-container">
+		<div class="media-container">
 			
-			
-				<img src="images/gallery-resized/student/collage.jpg">
-<!--				<h4>A World Turned Inside Out</h4>-->
-			
-			
-				<img src="images/gallery-resized/student/fish.jpg">
-<!--				<h4>Class of 1957 Stained Glass Window</h4>-->
-			
-				<img src="images/gallery-resized/student/jellyfish.jpg">
-<!--				<h4>Walking Man by George Segal</h4>-->
-				<img src="images/gallery-resized/student/turtle.jpg">
+			<div class="media-element">
+			<img src="images/gallery-resized/student/collage.jpg">
+			<p>Table of Contents Collage</p>
 			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/student/hazbin.jpg">
+			<p>Artists of Alexander Hazbin Hotel Fan Art</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/student/fish.jpg">
+			<p>Koi Fish</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/student/jellyfish.jpg">
+			<p>Jellyfish</p>
+			</div>
+			
+			<div class="media-element">
+			<img src="images/gallery-resized/student/turtle.jpg">
+			<p>Turtle</p>
+			</div>
+		</div>
+		
 		
 		<p>Finally, as we round off this week's art-in-the-wild finds, I wanted to take a moment to focus on student art (aside from the aforementioned murals). The members of Creative Café are fortunate enough to attend a college with <em>so</em> many talented individuals, and as such, it is only right that we highlight them, in hopes to spread the positivity and motivation!</p>
 		
@@ -191,16 +246,16 @@
 			
 		  </div>
 		</div>
-
-
-		
-		
-		
 		
 		</div>
 	
 	<footer class="footer">
 			 <p> &copy; 2024 by Creative Café. All rights reserved. </p> <!-- permissions statement, terms of use, social media menu, secondary site nav menu, etc. -->
 		  </footer>
+	
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/map-practice.js"></script>
+<script scr="js/gallery-slide.js"></script>
 </body>
 </html>
