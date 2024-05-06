@@ -46,19 +46,31 @@ var marker11 = L.marker([40.492975, -74.44521],{icon: museumIcon}).addTo(nbMap);
 var marker12 = L.marker([40.483156, -74.435365],{icon: museumIcon}).addTo(nbMap); //nj media arts center
 
 //location popups html
-var popup0 = '<a href="#social-justice"><h4>Dreams of Our Children</h4></a><p>A mural located on the building at the intersection of Jersey Avenue and Handy Street.</p><img src="images/map-images/social/dreams.jpg">'
-var popup1 = '<a href="#social-justice"><h4>Toward a More Just Future</h4></a><p>A mural located on the School of Social Work building on Albany Street.</p><img src="images/map-images/social/social-1.jpg">'
-var popup2 = '<a href="#social-justice"><h4>Convergence Point</h4></a><p>A long mural located within Deiner Park, behind the river dorms.</p><img src="images/map-images/social/convergence.jpg">'
-var popup3 = '<h4>A World Turned Inside Out</h4><img src="images/map-images/common/world.jpg">'
-var popup4 = '<h4>Class of 1957 Stained Glass Window</h4><img src="images/map-images/common/glass.jpg">'
-var popup5 = '<h4>Zimmerli Art Museum</h4>'
-var popup6 = '<h4>Hardenbergh Hall Triptych</h4><img src="images/map-images/student/fish.jpg">'
-var popup7 = '<h4>Walking Man</h4><img src="images/map-images/common/segal.jpg">'
-var popup8 = '<h4>One Piece Mural at Edo Takeout</h4><img src="images/map-images/student/one-piece.jpg">'
-var popup9 = '<h4>Artists of Alexander</h4><img src="images/map-images/student/alexander.jpg">'
-var popup10 = '<h4>Alfa Art Gallery</h4>'
-var popup11 = '<h4>Mason Gross Galleries</h4>'
-var popup12 = '<h4>NJ Media Arts Center</h4>'
+var popup0 = '<h4><em>Dreams of Our Children</em></h4><p>Referred to both as The Dreams of Our Children and Una Gota Rompe La Piedra (A Drop Breaks the Stone), this is a mural located... <a href="#murals">Read More</a></p><img src="images/map-images/social/dreams.jpg">'
+
+var popup1 = '<h4><em>Toward a More Just Future</em></h4><p>The mural representing the School of Social work is a piece spelling out "Toward a More Just Future" in both English and American Sign... <a href="#murals">Read More</a></p><img src="images/map-images/social/social-1.jpg">'
+
+var popup2 = '<h4><em>Convergence Point</em></h4><p><em>Convergence Point</em> is a mural created by Rutgers Mason Gross School of the Arts alum Ingrid Morales. This piece, located in... <a href="#murals">Read More</a></p><img src="images/map-images/social/convergence.jpg">'
+
+var popup3 = '<h4><em>A World Turned Inside Out</em></h4><p><em>A World Turned Inside Out</em> is a World War II Memorial honoring the 7,618 woman and men of Rutgers University... <a href="#history">Read More</a></p><img src="images/map-images/common/world.jpg">'
+
+var popup4 = '<h4><em>Class of 1972 and 1957 Stained Glass Windows</em></h4><p>As a gift for the 60th and 40th year reunion of the aforementioned class, these pieces symbolize the combining of the... <a href="#history"> Read More</a></p><img src="images/map-images/common/glass.jpg">'
+
+var popup5 = '<h4><a href="https://zimmerli.rutgers.edu/" target="_blank">Zimmerli Art Museum</a></h4><p>Last Wednesday, Simon decided to take a trip out to the Zimmerli Art Museum to discover the unique pieces on display... <a href="#simon"> Read More </a></p><img src="images/map-images/zimmerli.jpg"><p>The facade of Zimmerli Art Museum, via <a href="https://en.wikipedia.org/wiki/Zimmerli_Art_Museum_at_Rutgers_University" target="_blank">Wikipedia</a>.<p>'
+
+var popup6 = '<h4>Hardenbergh Hall Triptych</h4><p>In order, this triptych features some koi fish, jellyfish, and finally a lone turtle. I really enjoy how the paintings... <a href="#students"> Read More</a></p><img src="images/map-images/student/fish.jpg">'
+
+var popup7 = '<h4><em>Walking Man</em> by George Segal</h4><p>The bronze life-size figure represents an iconic age in the career of Segal, as well as his influence in the area. As a South Brunswick resident... <a href="#history">Read More</a></p><img src="images/map-images/common/segal.jpg">'
+
+var popup8 = '<h4><em>One Piece</em> Mural at Edo Takeout</h4><p>This is a small mural located right outside of the Japanese Eatery Edo Takeout depicting Zoro (left) and Luffy (right) from the long-running... <a href="#murals"> Read More</a></p><img src="images/map-images/student/one-piece.jpg">'
+
+var popup9 = '<h4><em>Hazbin Hotel</em> Fan Art</h4><p>This is a white board drawing depicting characters (Charlie Morningstar is shown here) from a new animated series called... <a href="#students"> Read More</a></p><img src="images/map-images/student/alexander.jpg">'
+
+var popup10 = '<h4><a href="https://www.alfaart.org/" target="_blank">Alfa Art Gallery</a></h4><img src="images/map-images/alfa-art-gallery.jpg"><p>The inside of the Alfa Art Gallery, via <a href="https://www.alfaart.org/event/november-16-6-pm-united-we-stand-new-brunswick-art-salon-fall-2012-open-studio-meet-the-artists-second-opening-reception/" target="_blank">Alfa Art Gallery</a>.<p>'
+
+var popup11 = '<h4><a href="https://www.masongross.rutgers.edu/degrees-programs/art-design/galleries-facilities/" target="_blank">Mason Gross Galleries</a></h4><img src="images/map-images/mason-gross-gallery.jpg"><p>The inside of the Mason Gross Galleries, by Collin Pieters via <a href="https://dailytargum.com/article/2015/02/mason-gross-galleries-exhibit-graduate-student-artwork" target="_blank">The Daily Targum</a>.<p>'
+
+var popup12 = '<h4><a href="http://njfilmfest.com/" target="_blank">Rutgers Film Coop</a></h4><img src="images/map-images/film-coop.jpg"><p>A room filled for the NJ Film Fest, via <a href="https://www.thealliance.media/members/rutgers-film-co-opnew-jersey-media-arts-centernew-jersey-film-festivals/" target="_blank">The Alliance</a>.<p>'
 
 var popupOptions = {minWidth:200}
 
